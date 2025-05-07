@@ -1,0 +1,300 @@
+@import url('https://fonts.cdnfonts.com/css/whitney-2');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --disc-header-bg:#255EE9;
+    --disc-blue-text:#7288D9;
+    --disc-section-bg:#F6F6F6;
+    --disc-btn-primary-bg:#FFFFFF;
+    --disc-btn-secondary-bg:#23272A;
+    --disc-btn-tertiary-bg:#8EA1E1;
+}
+
+body{
+    font-family: 'Whytney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+/* #region utils  */
+.d-flex{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+
+}
+
+.text-white{
+    color: white;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.y-bottom-20{
+    margin-bottom: 20px;
+}
+
+.y-bottom-50{
+    margin-bottom: 120px;
+}
+
+.paddin-y-100{
+    padding: 50px 0;
+
+}
+
+.left{
+    padding-right: 50px;
+
+}
+
+.right{
+    padding-left: 50px;
+
+}
+
+.bg-grey{
+    background-color: var(--disc-section-bg);
+}
+
+.bg-white{
+    background-color: white;
+}
+/* #endregion utils  */
+
+/* #region general  */
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.col-small{
+    width: 40%;
+}
+
+.col-large{
+    width: 60%;
+    img{
+        max-width: 100%;
+    }
+}
+
+.logo{
+    max-width: 100%;
+}
+
+.btn-small{
+    padding: 7px 15px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn{
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.btn-primary{
+    background-color: var(--disc-btn-primary-bg);
+}
+
+.btn-secondary{
+    background-color: var(--disc-btn-secondary-bg);
+}
+
+.btn-tertiary{
+    background-color: var(--disc-btn-tertiary-bg);
+}
+
+h2{
+    font-size: 3.3rem;
+}
+
+p{
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+i{
+    margin-right: 10px;
+}
+
+/* add wave border top  */
+.wave-top::before{
+    opacity: 2.7%;
+    content: '';
+    display: block;
+    border-top: 70px solid #42424200;
+    border-image-source: url('./img/wave.svg');
+    border-image-slice: 70;
+    border-image-outset: 0.99;
+}
+
+/* add wave border bottom  */
+.wave-bottom::after{
+    opacity: 2.7%;
+    content: '';
+    display: block;
+    border-top: 70px solid #42424200;
+    border-image-source: url('./img/wave.svg');
+    border-image-slice: 70;
+    border-image-outset: 1;
+    transform: scaleY(-1);
+}
+.wave-img{
+    opacity: 3%;
+}
+
+.invert-y {
+    transform: scaleY(-1);
+}
+/* #endregion general  */
+
+/* #region header  */
+header{
+    background-color: var(--disc-header-bg);
+    padding: 20px 0;
+}
+
+.nav{
+    justify-content: space-between;
+    align-items: center; 
+
+    >div:nth-child(even){
+        width: 50%;
+        ul{
+            justify-content: space-around;
+        }
+    }
+    >div:nth-child(odd){
+        width: 25%;
+    }
+    >div:last-of-type{
+        justify-content: flex-end;
+    }
+}
+/* #endregion header  */
+
+/* #region main  */
+
+/* hero  */
+.hero{
+    background-image: url(./img/jumbo.png);
+    background-size: cover ;
+    padding: 40px 0;
+    .jumbotron{
+        width: 60%;
+        padding: 60px 0 150px 0;
+        margin: 0 auto;
+        .d-flex{
+            justify-content: center;
+            gap: 15px;
+        }
+
+        h2{
+            margin-bottom: 40px;
+        }
+
+        p{
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+/* section4  */
+.col-single{
+    width: 100%;
+    h2{
+        font-size: 3rem;
+    }
+    div{
+        background-image: url("./img/stars.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 37%;
+        margin: 0 auto;
+        background-position-x: center;
+        padding-top: 10px;
+    }
+}
+
+/* #endregion main  */
+
+/* #region footer  */
+footer{
+    background-color: var(--disc-btn-secondary-bg);
+}
+
+/* link section  */
+.link-section{
+    padding: 40px 0;
+    .link-col-large{
+        width: calc((100% / 6) * 2);
+        li{
+            margin-bottom: 10px;
+        }
+        h3{
+            color: var(--disc-blue-text);
+            font-size: 1.3rem;
+        }
+
+        img{
+            max-width: 8%;
+        }
+
+        span{
+            color: white;
+        }
+
+        i{
+            color: white;
+        }
+    }
+    .link-col{
+        width: calc(100% / 6);
+        h3{
+            color: var(--disc-blue-text);
+            font-size: 1rem;
+        }
+        a{
+            font-size:0.7rem ;
+        }
+    }
+}
+
+/* banner section  */
+.footer-banner-section{
+    padding-top: 15px;
+
+    .banner{
+        border-top: 1px solid white;
+
+        padding: 10px 0;
+        justify-content: space-between;
+        div{
+            padding: 5px;
+        }
+    }
+}
+/* #endregion footer  */
+
+
+
