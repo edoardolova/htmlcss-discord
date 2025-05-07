@@ -188,6 +188,7 @@ header{
 .hero{
     background-image: url(./img/jumbo.png);
     background-size: cover ;
+    padding: 40px 0;
     .jumbotron{
         width: 60%;
         padding: 60px 0 150px 0;
@@ -238,7 +239,6 @@ footer{
 /* link section  */
 .link-section{
     padding: 40px 0;
-    border-bottom: 1px solid white;
     .link-col-large{
         width: calc((100% / 6) * 2);
         li{
@@ -279,7 +279,10 @@ footer{
 /* banner section  */
 .footer-banner-section{
     padding-top: 15px;
+
     .banner{
+        border-top: 1px solid white;
+
         padding: 10px 0;
         justify-content: space-between;
         div{
