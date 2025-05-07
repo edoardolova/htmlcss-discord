@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/whitney-2');
+
 *{
     padding: 0;
     margin: 0;
@@ -5,7 +7,7 @@
 }
 
 :root{
-    --disc-header-bg:#3161E0;
+    --disc-header-bg:#255EE9;
     --disc-blue-text:#7288D9;
     --disc-section-bg:#F6F6F6;
     --disc-btn-primary-bg:#FFFFFF;
@@ -14,9 +16,7 @@
 }
 
 body{
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+    font-family: 'Whytney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 }
 
@@ -36,10 +36,12 @@ a{
 
 }
 
-
-
 .text-white{
     color: white;
+}
+
+.text-center{
+    text-align: center;
 }
 
 
@@ -63,15 +65,43 @@ a{
     max-width: 100%;
 }
 
-.btn{
-    padding: 7px 12px;
+.btn-small{
+    padding: 7px 15px;
     border-radius: 15px;
     border: none;
     cursor: pointer;
 }
 
+.btn{
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
 .btn-primary{
     background-color: var(--disc-btn-primary-bg);
+}
+
+.btn-secondary{
+    background-color: var(--disc-btn-secondary-bg);
+
+}
+
+h2{
+    font-size: 3.3rem;
+}
+
+p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.5;
+
+}
+
+i{
+    margin-right: 10px;
 }
 
 /* #endregion general  */
@@ -113,10 +143,24 @@ main{
 
 /* hero  */
 .hero{
-    background-color: var(--discord-hero-bg);
+    background-image: url(./img/jumbo.png);
+    background-size: cover ;
     .jumbotron{
         width: 60%;
+        padding: 60px 0 150px 0;
         margin: 0 auto;
+        .d-flex{
+            justify-content: center;
+            gap: 15px;
+        }
+
+        h2{
+            margin-bottom: 40px;
+        }
+
+        p{
+            margin-bottom: 20px;
+        }
     }
 }
 
