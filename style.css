@@ -116,7 +116,10 @@ a{
 
 .btn-secondary{
     background-color: var(--disc-btn-secondary-bg);
+}
 
+.btn-tertiary{
+    background-color: var(--disc-btn-tertiary-bg);
 }
 
 h2{
@@ -204,7 +207,23 @@ header{
 /* section4  */
 .col-single{
     width: 100%;
+    h2{
+        font-size: 3rem;
+    }
+    div{
+        background-image: url("./img/stars.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 37%;
+        margin: 0 auto;
+        background-position-x: center;
+        padding-top: 10px;
+    }
 }
+
+/* .call-to-action-bg{
+    background-image: url("./img/stars.svg");
+} */
 /* #endregion main  */
 
 /* #region footer  */
