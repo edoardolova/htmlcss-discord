@@ -48,6 +48,26 @@ a{
     margin-bottom: 20px;
 }
 
+.y-bottom-50{
+    margin-bottom: 50px;
+}
+
+.padding-left-50{
+    padding-left: 50px;
+}
+
+.padding-right-50{
+    padding-right: 50px;
+}
+
+.bg-grey{
+    background-color: var(--disc-section-bg);
+}
+
+.bg-white{
+    background-color: white;
+}
+
 
 /* #endregion utils  */
 
@@ -55,11 +75,13 @@ a{
 .container{
     width: 70%;
     margin: 0 auto;
+    padding: 100px 0;
+
 }
 
 .col-small{
     width: 40%;
-    padding: 30px 0 30px 100px;
+    padding-top: 30px;
 }
 
 .col-large{
@@ -98,7 +120,7 @@ a{
 }
 
 h2{
-    font-size: 3rem;
+    font-size: 3.3rem;
 }
 
 p{
@@ -109,6 +131,18 @@ p{
 
 i{
     margin-right: 10px;
+}
+
+.wave-top{
+    margin-bottom: -4px;
+
+}
+.wave-img{
+    opacity: 3%;
+}
+
+.invert-y {
+    transform: scaleY(-1);
 }
 
 /* #endregion general  */
@@ -142,11 +176,6 @@ header{
 /* #endregion header  */
 
 /* #region main  */
-main{
-    section{
-        padding: 30px 0;
-    }
-}
 
 /* hero  */
 .hero{
@@ -162,8 +191,6 @@ main{
         }
 
         h2{
-            font-size: 3.3rem;
-
             margin-bottom: 40px;
         }
 
